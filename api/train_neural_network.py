@@ -1,8 +1,8 @@
-# Generate training data
 from api.build_model import build_model
 from api.generate_training_data import generate_training_data
 
 
+# Generate training data
 X_train, y_train = generate_training_data(10000)
 
 # Build the model

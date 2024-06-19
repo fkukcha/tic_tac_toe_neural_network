@@ -7,11 +7,14 @@ This project implements a Tic Tac Toe AI using a neural network trained with Ten
 - Neural Network Model
 - Training
 - Usage and Evaluation
+- Testing
 - Contributing
 ## Requirements
 - Python 3.x
 - TensorFlow 2.x(or higher)
 - NumPy
+- pytest (for testing)
+
 Install the required packages using `pip`:
 ```bash
 pip install -r requirements.txt
@@ -59,7 +62,24 @@ board = ['X', '-', 'O', '-', 'X', '-', '-', '-', 'O']
 move = predict_move(board, model)
 print(f"Predicted optimal move: {move}")
 ```
+### Running `main.py`
+To run the main script main.py, which demonstrates the usage of the trained model to predict moves, follow these steps:
+1. Ensure that all dependencies are installed by running:
+```bash
+pip install -r requirements.txt
+```
+2. Run the script `main.py`
+
+This will execute main.py and demonstrate the prediction of the optimal move for a predefined board configuration using the trained model.
 ### Evaluation
 Evaluate the model by playing against it or using a validation set. Adjust the training parameters and model architecture based on performance metrics.
+## Testing
+### Integration Tests
+To ensure the functionality from data generation to model training works correctly, run integration tests.
+
+To run the tests, navigate to your project root and run:
+```bash
+pytest
+```
 ## Contributing
 Contributions are welcome! Feel free to fork the repository, create pull requests, or open issues for any improvements or bug fixes.
