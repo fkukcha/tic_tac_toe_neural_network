@@ -15,5 +15,5 @@ def test_predict_move():
     model.fit(X_train, y_train, epochs=1, verbose=0)
 
     board = ['X', 'O', '-', '-', 'X', '-', '-', 'O', 'X']
-    move = predict_move(board, model)
+    move = predict_move(board, model, optimal_only=True)
     assert move in range(9)  # Ensure the move is a valid board index

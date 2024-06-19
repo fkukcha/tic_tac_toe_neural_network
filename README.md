@@ -6,7 +6,7 @@ This project implements a Tic Tac Toe AI using a neural network trained with Ten
 - Dataset Generation
 - Neural Network Model
 - Training
-- Usage and Evaluation
+- Usage
 - Testing
 - Contributing
 ## Requirements
@@ -52,17 +52,17 @@ To train the neural network, follow these steps:
 1. Generate Training Data: Use `generate_training_data(num_games)` to create a dataset of game states (`X_train`) and optimal moves (`y_train`).
 2. Build Model: Create an instance of the neural network model using the provided architecture.
 3. Train Model: Train the model using `model.fit(X_train, y_train, epochs=10, batch_size=32, verbose=1).
-## Usage and Evaluation
+## Usage
 After training, you can use the model to predict moves and evaluate its performance.
 ### Predicting Moves
 Use the `predict_move(board, model)` function to predict the optimal move for a given board configuration.
-### Example
+#### Example
 ```python
 board = ['X', '-', 'O', '-', 'X', '-', '-', '-', 'O']
 move = predict_move(board, model)
 print(f"Predicted optimal move: {move}")
 ```
-### Running `main.py`
+#### Running `main.py`
 To run the main script main.py, which demonstrates the usage of the trained model to predict moves, follow these steps:
 1. Ensure that all dependencies are installed by running:
 ```bash
@@ -71,11 +71,10 @@ pip install -r requirements.txt
 2. Run the script `main.py`
 
 This will execute main.py and demonstrate the prediction of the optimal move for a predefined board configuration using the trained model.
-### Evaluation
-Evaluate the model by playing against it or using a validation set. Adjust the training parameters and model architecture based on performance metrics.
+### Play against the AI
+To play against the AI, run the script `play_game_against_ai.py`
 ## Testing
-### Integration Tests
-To ensure the functionality from data generation to model training works correctly, run integration tests.
+To ensure the functionality from data generation to model training works correctly, run tests.
 
 To run the tests, navigate to your project root and run:
 ```bash
