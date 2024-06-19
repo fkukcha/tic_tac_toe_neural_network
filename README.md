@@ -1,7 +1,12 @@
 # Tic Tac Toe Neural Network
+## Description
 This project implements a Tic Tac Toe AI using a neural network trained with TensorFlow/Keras. The AI learns to predict optimal moves based on the current game state, providing a challenging opponent or a learning experiment in AI development.
+## Note
+> **Note:**
+> PyCharm has been used as the IDE for this project.
 ## Table of Contents
 - Requirements
+- Setting up the Environment
 - Game Environment
 - Dataset Generation
 - Neural Network Model
@@ -19,6 +24,39 @@ Install the required packages using `pip`:
 ```bash
 pip install -r requirements.txt
 ```
+## Setting up the Environment
+1. We start by installing the package- and environment manager conda
+2. Therefore, download Miniconda here:
+> https://docs.conda.io/en/latest/miniconda.html
+> 
+> Available for Windows, MacOS, and Linux
+3. Install Miniconda
+> When prompted, add Miniconda3 to PATH environment
+> 
+> Otherwise, you won‘t be able to use conda from your terminal
+4. Testing conda
+> If you added Miniconda3 to your PATH variable, load your favorite
+terminal and execute the following command:
+`conda --version`
+5. Updating Conda
+> Update conda, using the following command:
+> 
+> conda update -n base -c defaults conda
+6. Create your virtual environment
+> 1. Create a new virtual environment:
+> > conda activate base
+> 
+> > conda create --name `<env name>`
+> 
+> > or
+> > conda create --prefix `<env name>` `<more options>`
+> 2. Activate your virtual environment:
+> > conda activate `<env name>` or conda activate `./<env name>`
+> 3. Install the required packages:
+> > conda install `<package name>`
+> > pip install `<package name>`
+> 4. To deactivate your virtual environment:
+> > conda deactivate
 ## Game Environment
 The Tic Tac Toe game environment provides functions to manage the game state, check for wins/draws, and make moves.
 ### Functions
