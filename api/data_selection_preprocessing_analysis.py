@@ -5,7 +5,12 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 
 
-def load_data(data_dir):
+def load_data(data_dir: str) -> (np.array, np.array):
+    """
+    Load the images and labels from the data directory
+    :param data_dir: str, path to the data directory
+    :return: np.array, np.array, images and labels
+    """
     images = []
     labels = []
     for label in ['X', 'O', 'Blank']:
@@ -21,11 +26,15 @@ def load_data(data_dir):
 
 data_dir = '../tictactoe_images/train'
 images, labels = load_data(data_dir)
+
+# Normalize the images
 images = images / 255.0
 
+# Convert the labels to numbers
 label_mapping = {'X': 0, 'O': 1, 'Blank': 2}
 labels = np.array([label_mapping[label] for label in labels])
 
+# Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(images, labels, test_size=0.2, random_state=42)
 
 # Visualize the data
