@@ -9,6 +9,8 @@
 
 ## Table of Contents
 - [Project Overview](#project-overview)
+- [Requirements](#requirements)
+- [Setting up the Environment](#setting-up-the-environment)
 - [Directory Structure](#directory-structure)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -24,6 +26,54 @@
 
 ## Project Overview
 This project is focused on classifying Tic-Tac-Toe game images using machine learning techniques. The goal is to classify images into three categories: 'X', 'O', and 'Blank'. The project includes data loading, preprocessing, model selection, training, optimization, error analysis, and explainability techniques.
+
+## Requirements
+- Python 3.x
+- tensorflow
+- numpy
+- matplotlib
+- scikit-learn
+- lime
+- scikeras
+
+Install the required packages using `pip`:
+```bash
+pip install -r requirements.txt
+```
+
+## Setting up the Environment
+1. We start by installing the package- and environment manager conda
+2. Therefore, download Miniconda here:
+> https://docs.conda.io/en/latest/miniconda.html
+> 
+> Available for Windows, MacOS, and Linux
+3. Install Miniconda
+> When prompted, add Miniconda3 to PATH environment
+> 
+> Otherwise, you won‘t be able to use conda from your terminal
+4. Testing conda
+> If you added Miniconda3 to your PATH variable, load your favorite
+terminal and execute the following command:
+`conda --version`
+5. Updating Conda
+> Update conda, using the following command:
+> 
+> conda update -n base -c defaults conda
+6. Create your virtual environment
+> 1. Create a new virtual environment:
+> > conda activate base
+> 
+> > conda create --name `<env name>`
+> 
+> > or
+> > conda create --prefix `<env name>` `<more options>`
+> 2. Activate your virtual environment:
+> > conda activate `<env name>` or conda activate `./<env name>`
+> 3. Install the required packages:
+> > conda install `<package name>`
+> > pip install `<package name>`
+> 4. To deactivate your virtual environment:
+> > conda deactivate
 
 ## Directory Structure
 ```plaintext
