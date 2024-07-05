@@ -21,8 +21,6 @@
   - [Model Test Evaluation](#model-test-evaluation)
   - [Comparing Advanced Models](#comparing-advanced-models)
   - [Explainable Techniques and Tools](#explainable-techniques-and-tools)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 This project is focused on classifying Tic-Tac-Toe game images using machine learning techniques. The goal is to classify images into three categories: 'X', 'O', and 'Blank'. The project includes data loading, preprocessing, model selection, training, optimization, error analysis, and explainability techniques.
