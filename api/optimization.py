@@ -29,6 +29,9 @@ def create_model(optimizer='adam'):
 """
 Grid search for the optimizer
 The optimizer is a hyperparameter that can be tuned
+Hyperparameter optimization improves model performance without changing the architecture
+Hyperparameters are parameters that are set before the learning process begins
+Grid search is a technique to find the best hyperparameters for a model
 We will search over two optimizers: adam and rmsprop
 The model is created using the create_model function
 The model is wrapped in a KerasClassifier to be used with scikit-learn

@@ -11,7 +11,9 @@ from api.models_selection_training import model
 
 def get_gradcam(model, img, layer_name='conv2d_1') -> np.array:
     """
-    Generate a Grad-CAM heatmap for the given image and model
+    Generate a Grad-CAM(Gradient-weighted Class Activation Mapping) heatmap for the given image and model
+    heatmap is a visualization technique that shows how much each pixel in the image contributes to the model's
+    prediction
     :param model: tf.keras.Model, the model to generate the heatmap for
     :param img: np.array, the image to generate the heatmap for
     :param layer_name: str, the name of the layer to use for the heatmap
@@ -53,6 +55,8 @@ plt.show()
 
 """
 Visualize the LIME explanation for the first test image
+LIME(Local Interpretable Model-agnostic Explanations) is a technique that explains the predictions of a model
+It generates an explanation that highlights the important parts of the image for the model's prediction
 and the top 3 predicted classes with 5 features each
 """
 explainer = lime_image.LimeImageExplainer()

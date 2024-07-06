@@ -35,6 +35,8 @@ label_mapping = {'X': 0, 'O': 1, 'Blank': 2}
 labels = np.array([label_mapping[label] for label in labels])
 
 # Split the data into training and testing sets
+# X_train is the training images, X_test is the testing images
+# y_train is the training labels, y_test is the testing labels
 X_train, X_test, y_train, y_test = train_test_split(images, labels, test_size=0.2, random_state=42)
 
 # Visualize the data

@@ -12,7 +12,6 @@
 - [Requirements](#requirements)
 - [Setting up the Environment](#setting-up-the-environment)
 - [Directory Structure](#directory-structure)
-- [Installation](#installation)
 - [Usage](#usage)
   - [Data Selection, Preprocessing, and Analysis](#data-selection-preprocessing-and-analysis)
   - [Model Selection and Training](#model-selection-and-training)

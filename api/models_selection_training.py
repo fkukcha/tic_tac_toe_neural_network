@@ -7,12 +7,12 @@ from api.data_selection_preprocessing_analysis import X_train, y_train
 Create a simple CNN model
 The input shape is (28, 28, 1) because the images are grayscale
 The output layer has 3 units because there are 3 classes: X, O, and Blank
-The activation function for the output layer is softmax because this is a multi-class classification problem
-relu is used as the activation function for the hidden layers
 Convolutional layers are used to extract features from the images
 Max pooling layers are used to reduce the spatial dimensions of the feature maps
 Flatten is used to convert the 2D feature maps to a 1D vector
 Dense layers are used to make the final predictions
+relu is used as the activation function for the hidden layers
+The activation function for the output layer is softmax because this is a multi-class classification problem
 """
 model = Sequential([
     Input(shape=(28, 28, 1)),
@@ -26,9 +26,9 @@ model = Sequential([
 ])
 
 """
-The optimizer is adam
+The optimizer is adam because it is a good general-purpose optimizer
 The loss function is sparse_categorical_crossentropy because the labels are integers
-The metrics are accuracy
+The metrics are accuracy because we want to track the accuracy of the model
 """
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 model.summary()
